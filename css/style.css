@@ -24,6 +24,9 @@
     position: absolute;
     bottom: 0;
     width: 80px;
+   
+}
+.jumpMario{
     animation: jumpMario 500ms  ease-out;
 }
 @keyframes pipe-animation{
