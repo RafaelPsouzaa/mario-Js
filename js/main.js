@@ -10,8 +10,8 @@ const jumpMario = ()=> {
 }
 
 const loop = setInterval(() => {
-    const pipePosition = pipe.offsetleft;
-    console.log(pipePosition);
+    const pipePosition = pipe.offSetLeft;
+    
    
 },10);
 
