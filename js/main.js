@@ -10,7 +10,12 @@ const jumpMario = ()=> {
 }
 
 const loop = setInterval(() => {
-    const pipePosition = pipe.offSetLeft;
+    const pipePosition = pipe.offsetLeft;
+    
+    if(pipePosition <= 65){
+        pipe.style.animation ='nome';
+        pipe.style.left = `${pipePosition}px`
+    }
     
    
 },10);
