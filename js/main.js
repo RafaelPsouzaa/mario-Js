@@ -14,9 +14,19 @@ const loop = setInterval(() => {
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
     console.log(marioPosition);
     
-    if(pipePosition <= 65 && marioPosition < 68){    
+    if(pipePosition <= 65 && pipePosition >0 && marioPosition < 68){    
         pipe.style.animation ='nome';
         pipe.style.left = `${pipePosition}px`
+
+        mario.style.animation ='nome';
+        mario.style.bottom = `${marioPosition}px`
+        
+        mario.src = '../assets/game-over.png'
+        mario.style.width ='45px';
+        mario.style.marginLeft = '20px'
+    
+        clearInterval(loop);
+
     }
     
    
